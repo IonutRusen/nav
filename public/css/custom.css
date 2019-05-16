@@ -1,0 +1,232 @@
+/*#nav {
+    background-color: #000000; !*coloreaza bara principala de meniu de sus*!
+}
+
+#nav {
+    text-align:center;
+}
+
+#nav li {
+    display:inline;
+}
+
+#nav a {
+    text-decoration:none;
+    padding: 12px; !* REGLEZA DISTANTA INTRE CUVINTELE MENIULUI variable width *!
+
+}
+
+#Nav {
+    list-style-type: none;  !*nu are efect*!
+    padding: 0;      !*nu are efect*!
+    margin-top: 0px; !*n-are nici un efect*!
+    font-size:22px;
+    font-family: "calibri";  !*schimba  stil font*!
+    text-align: center;
+}
+
+#Nav a:hover {
+    color: #000;  !*schimbi culoarea textului dupa ce este selectat cu mouseul*!
+    text-decoration: none;  !*scoate underline*!
+}
+
+#Nav a{
+    color: #FFFFFF; !*coloreaza scrisul meniu cu negru*!
+    text-decoration:none;
+}
+
+#Nav {
+    height: 51px;  !*reglezi inaltimea*!
+    line-height: 51px;  !* si de aici reglezi tot inaltimea barei*!
+    white-space: nowrap;
+}
+
+#Nav li a:hover {
+    background-color: #F2EBEB; !*coloreaza hover scrisul meniului*!
+    padding: 14px;  !*DA LATIMEA HOVERULUI  ADEVARATUL*!
+}*/
+
+/* display: block;  /*blocheaza bara de meniu nu mai poti activa nimic */
+#apDiv1 {
+    position: fixed;
+    left: 22px;
+    top: 147px;
+    width: 557px;
+    height: 703px;
+    z-index: 1;
+}
+#apDiv2 {
+    position: absolute;
+    left: 534px;
+    top: 60px;
+    width: 980px;
+    height: 4049px;
+    z-index: 1;
+    background-color: #FFFFFF;
+}
+
+/*
+table {
+  border-collapse: collapse; /*<!-- asa nu mai apare bordura tabele--> */
+/*  }  */
+
+/*
+table, th, td {
+  border: 1px solid black; asa apare bordura 1 in tot tabelul
+} */
+
+/*dimenisonare latime inaltime tabel table
+{
+  width: 100%;
+}
+
+th {
+  height: 50px;
+} */
+
+/* aliniere text tabel
+
+th {
+  text-align: left;
+}  */
+
+/* distatezi cuvintele in celula fata de stanga 15px
+
+th, td {
+  padding: 15px;
+}  */
+
+/* aliniere text celule la stanga cuvintele din celule departate 8px de stanga
+iar bordura apare doar sub cuvintele scrie doar mijlocul tabelului
+partile laterale nu vor fi bordurate.
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;  asta bordureaza doar partea de jos a celulelor tabelului
+}          */
+
+/*table.on, th, td {
+  /*border-bottom: 1px solid #ddd;*/
+/*} */
+
+table.on {
+    border: 0px solid  #1C6EA4; /*coloreaza doar  bordura exterioara tabel*/
+    background-color: #EEEEEE;  /*coloreaza tot tabelul cu gri*/
+    width: 505px; /*latime tabel*/
+    height: 566px;  /*inaltime tabel*/
+    text-align: left;  /*alinieaza celule din dreapta la stanga sau dreapta*/
+    border-collapse: collapse; /*nu are nici un efect*/
+}
+table.on tbody td {
+    font-size: 13px; /*micsoreaza fontul si droplisturile pe verticala din celule din dreapta*/
+}
+table.on tr:nth-child(even) {
+    background: #D0E4F5; /*coloreaza randurile cu albastru , unul da unul nu*/
+}
+
+table.on tfoot td {
+    font-size: 14px; /*nu face nimic*/
+}
+table.on tfoot .links {
+    text-align: left; /*asta nu face nimic*/
+}
+table.on td, table.on th {
+    /* border: 3px solid #AAAAAA; /*a bagat bordura in celule din dreapta */
+    padding: 0px 0px; /*mareste spatiul intre celule pe verticala*/
+}
+table.on tfoot .links a{  /*asta nu face nimic*/
+    display: inline-block;
+    background: #1C6EA4;
+    color: #fff000;
+    padding: 8px 18px;
+    border-radius: 5px;
+}
+#apDiv3 {
+    position: absolute;
+    left: 598px;
+    top: 150px;
+    width: 432px;
+    height: 350px;
+    z-index: 2;
+}
+
+#apDiv4 {
+    position: fixed;
+    left: 193px;
+    top: 73px;
+    width: 220px;
+    height: 51px;
+    z-index: 3;
+    background-color: #000000;
+}
+/*BARA NOUA*/
+#anu {
+    background-color: #fff000; /*coloreaza bara principala de meniu de sus*/
+}
+
+#anu {
+    text-align:center;
+}
+
+#anu li {
+    display:inline;
+}
+
+#anu a {
+    text-decoration:none;
+    padding: 12px; /* REGLEZA DISTANTA INTRE CUVINTELE MENIULUI variable width */
+
+}
+
+#Anu {
+    list-style-type: none;  /*nu are efect*/
+    padding: 0;      /*nu are efect*/
+    margin-top: 0px; /*n-are nici un efect*/
+    font-size:22px;
+    font-family: "calibri";  /*schimba  stil font*/
+    text-align: center;
+}
+
+#Anu a:hover {
+    color: #000;  /*schimbi culoarea textului dupa ce este selectat cu mouseul*/
+    text-decoration: none;  /*scoate underline*/
+}
+
+#Anu a{
+    color: #FFFFFF; /*coloreaza scrisul meniu cu negru*/
+    text-decoration:none;
+}
+
+#Anu {
+    height: 51px;  /*reglezi inaltimea*/
+    line-height: 51px;  /* si de aici reglezi tot inaltimea barei*/
+    white-space: nowrap;
+}
+
+#Anu li a:hover {
+    background-color: #F2EBEB; /*coloreaza hover scrisul meniului*/
+    padding: 14px;  /*DA LATIMEA HOVERULUI  ADEVARATUL*/
+}
+/*PARAGRAF*/
+p.event_desc {           /*schimbi numele in p.on sa corespunda cu denumirea clasei paragrafului*/
+    font: bold 18px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: center;
+    line-height: 14px;
+    height: 20px;
+    margin: 0px;
+}
+/*SFARSIT PARAGRAF*/
+
+th > select{
+    width: 100%!important;
+}
+#ms-list-1{
+    width: 100%;
+}
+.ms-options-wrap > button:focus, .ms-options-wrap > button {
+    width: inherit;
+}
+.is-invalid{
+    border: 1px solid red!important;
+}
