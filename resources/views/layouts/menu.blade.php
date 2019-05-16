@@ -60,16 +60,42 @@
                     </li>
                 @endguest
 
-                @foreach (Config::get('languages') as $lang => $language)
+
+                <li class="nav-item dropdown">
+                    <a id="navbarDropdown1" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                        @foreach (Config::get('languages') as $lang => $language)
+                            @if ($lang == app()->getLocale())
+                                <img src="{{$language['img']}}" title="{!! $language['name'] !!}"/>
+                            @endif
+                        @endforeach
+                    </a>
+
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown1">
+                        @foreach (Config::get('languages') as $lang => $language)
+
+
+                            @if ($lang != app()->getLocale())
+                                <a class="dropdown-item" href="{{ url('locale/'.$lang) }}">
+                                    <img src="{{$language['img']}}" title="{!! $language['name'] !!}"/>
+                                </a>
+                            @endif
+                        @endforeach
+
+
+                    </div>
+                </li>
+
+               {{-- @foreach (Config::get('languages') as $lang => $language)
+
 
                     @if ($lang != app()->getLocale())
 
-                        <li class="nav-item"><a href="{{ url('locale/'.$lang) }}" class="nav-link"><img src="{{$language['img']}}" title="{!! $language['name'] !!}"/>{{-- {!! $language['name'] !!}--}}</a></li>
+                        <li class="nav-item"><a href="{{ url('locale/'.$lang) }}" class="nav-link"><img src="{{$language['img']}}" title="{!! $language['name'] !!}"/>--}}{{-- {!! $language['name'] !!}--}}{{--</a></li>
 
 
                     @endif
                 @endforeach
-
+--}}
             </ul>
         </div>
     </div>

@@ -27,7 +27,7 @@ Route::get('/home', 'HomeController@index')->name('home')->middleware('verified'
 Route::get('/clear', function() {
 
     //  Artisan::call('migrate');
-    Artisan::call('migrate');
+    Artisan::call('config');
     // return what you want
 
     return 'success';
